@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p style="padding-top: 25px; font-size: 25px;">Grammite</p>
+    <p style="color: #afafaf;">A modern Formal Grammar processor.</p>
+
+    <div id="content">
+        <!-- Input & Submit -->
+        <div class="flex-box">
+            <textarea name="" id="input" spellcheck="false" placeholder="start -> ..."></textarea>
+
+            <div id="details">
+                <div id="usage"">
+                    <p style="font-weight: 800; color: #afafaf; font-style: italic;">Usage</p>
+                    <p style="margin-left: 10px;">Define a rule:</p>
+                    <p style="margin-left: 20px;">start -> Hello, world!</p>
+                    <br>
+                    <p style="margin-left: 10px; font-style: italic;">Self-reference:</p>
+                    <p style="margin-left: 20px;">Use the [!] symbol to self-reference. This is helpful in situations like these:</p>
+                    <p style="margin-left: 20px;">{integer} => 0|1|2|3|4|5|6|7|8|9 OR 0|1|2|3|4|5|6|7|8|9 {integer}</p>
+                    <p style="margin-left: 20px;">The [!] symbol will pick another non-self-referencing result and replace itself with it before continuing processing.</p>
+                </div>
+            
+                <div id="output">
+                    <p style="font-weight: 800; color: #afafaf;">Output</p>
+                    <p id="output-text"></p>
+                </div>
+
+                <!-- <div id="examples">
+                    <p style="font-weight: 800; color: #afafaf;">Examples</p>
+                    <input type="button" value="Burger Generator">
+                    <input type="button" value="XYZ">
+                    <input type="button" value="Sentence Grammar">
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Output on the right side of the screen -->
+        <input type="button" value="Process" id="process">
+    </div>
+
+    <!-- Load script after page load -->
+    <script src="script.js"></script>
+</body>
+</html>

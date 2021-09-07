@@ -1,0 +1,104 @@
+html, body {
+    width: 99vw;
+    height: 95vh;
+    background-color: #474747;
+    color: white;
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#input {
+    height: 60vh;
+    background-color: #212121;
+    box-shadow: #212121;
+    box-shadow: rgba(27, 24, 27, 0.5) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    resize: none;
+    min-width: 50%;
+    width: 50%;
+    margin-top: 50px;
+    display: block;
+}
+
+#input {
+    padding: 35px;
+}
+
+#input:hover {
+    box-shadow: rgba(27, 24, 27, 0.9) 0px 7px 29px 0px;
+    transition: 0.3s;
+}
+
+#input:focus { 
+    outline: none !important;
+    box-shadow: rgba(27, 24, 27, 0.9) 0px 7px 29px 0px;
+}
+
+#output {
+    display: inline-block;
+    padding-top: 0;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#details {
+    padding-top: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+#output {
+    padding-top: 50px;
+}
+
+#examples {
+    bottom: 0px;
+    position: absolute;
+}
+
+#examples input {
+    margin-right: 15px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input:hover {
+    color: black;
+    background-color: white;
+}
+
+#process {
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 47%;
+    border: 1px solid white;
+    float: left;
+}
+
+#process:hover {
+    color: white;
+    background-color: #ffffff1c;
+}
